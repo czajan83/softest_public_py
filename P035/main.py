@@ -31,4 +31,4 @@ def main(hardware_version, order_number, model_number, first_serial_number, firs
 
 
 if __name__ == '__main__':
-    main("HV01.02", "31735", "800688", "132300001", "0C:04:07:01:00:10", "0C:04:07:01:00:1F", "17")
+    main("", "", "", "", "", "", "")
