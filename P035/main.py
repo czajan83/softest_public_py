@@ -1,13 +1,13 @@
 import os
 import subprocess
-from customer_files.preregister_tools.preregister import preregister
+from P035_customer_files.preregister_tools.preregister import preregister
 
 
 def main(hardware_version, order_number, model_number, first_serial_number, first_mac, last_mac, lot_size):
     create_mac_db_file = subprocess.run(["powershell",
                                          "-ExecutionPolicy",
                                          "Bypass",
-                                         "customer_files\\preregister_tools\\generate_mac.ps1",
+                                         "P035_customer_files\\preregister_tools\\generate_mac.ps1",
                                          hardware_version,
                                          order_number,
                                          model_number,
@@ -16,7 +16,7 @@ def main(hardware_version, order_number, model_number, first_serial_number, firs
                                          last_mac])
     print(create_mac_db_file.returncode, create_mac_db_file.stderr)
 
-    with open("customer_files\\preregister_tools\\production_environ.ps1", mode="r") as environ_variables_file:
+    with open("P035_customer_files\\preregister_tools\\production_environ.ps1", mode="r") as environ_variables_file:
         environ_variables_texts = environ_variables_file.readlines()
     for environ_variable_text in environ_variables_texts:
         variable_name = environ_variable_text[5: environ_variable_text.find("=\"")]
@@ -27,7 +27,7 @@ def main(hardware_version, order_number, model_number, first_serial_number, firs
     for key in os.environ.keys():
         print(key, os.environ.get(key))
 
-    preregister()
+    # preregister()
 
 
 if __name__ == '__main__':
