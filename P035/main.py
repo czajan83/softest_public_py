@@ -31,4 +31,5 @@ def main(hardware_version, order_number, model_number, first_serial_number, firs
 
 
 if __name__ == '__main__':
+    # will not work from here, script shall be triggered from labview vi or labview exe file
     main("", "", "", "", "", "", "")
