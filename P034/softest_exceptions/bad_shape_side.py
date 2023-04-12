@@ -1,0 +1,2 @@
+class BadShapeSide(Exception):
+    pass
