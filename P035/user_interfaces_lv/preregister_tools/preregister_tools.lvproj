@@ -10,12 +10,18 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="batch_length.vi" Type="VI" URL="../subVIs/batch_length.vi"/>
+		<Item Name="execute_script.vi" Type="VI" URL="../subVIs/execute_script.vi"/>
 		<Item Name="load.vi" Type="VI" URL="../subVIs/load.vi"/>
+		<Item Name="mac_db_progress.vi" Type="VI" URL="../subVIs/mac_db_progress.vi"/>
+		<Item Name="perform_regex.vi" Type="VI" URL="../subVIs/perform_regex.vi"/>
 		<Item Name="preregister_tools.vi" Type="VI" URL="../preregister_tools.vi"/>
 		<Item Name="preregistration_data.ctl" Type="VI" URL="../controls/preregistration_data.ctl"/>
+		<Item Name="preregistration_data_correct.vi" Type="VI" URL="../subVIs/preregistration_data_correct.vi"/>
 		<Item Name="queue.vi" Type="VI" URL="../subVIs/queue.vi"/>
 		<Item Name="read_set_preregistration_data_msg.vi" Type="VI" URL="../subVIs/read_set_preregistration_data_msg.vi"/>
 		<Item Name="regex.vi" Type="VI" URL="../subVIs/regex.vi"/>
+		<Item Name="run_py.vi" Type="VI" URL="../subVIs/run_py.vi"/>
 		<Item Name="softest2-ico.ico" Type="Document" URL="../../../../../Users/andrz/OneDrive/Dokumenty/LabVIEW Data/Icon Templates/VI/3rd party/softest2-ico.ico"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -53,6 +59,7 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -77,7 +84,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9AC2337F-1680-408D-AD46-5EF95F15C646}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">preregister_tools.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.exe</Property>
